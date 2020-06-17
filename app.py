@@ -9,7 +9,7 @@ Created on Tue Jun 16 14:45:13 2020
 
 from flask import Flask,render_template,url_for,request
 import pandas as pd 
- 
+import os
 import pickle
 
 import numpy as np
@@ -42,4 +42,5 @@ def predict():
         return render_template('result.html', prediction=my_prediction)
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	port = int(os.environ.get('PORT', 5000))
+	app.run(host='0.0.0.0', port=port, debug=True)
