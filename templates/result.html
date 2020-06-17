@@ -1,0 +1,80 @@
+<html lang="en" dir="ltr">
+	<head>
+        <meta charset="utf-8">
+        <title>Diabetes Predictor</title>
+        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+      
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+      <div class="container"><br></br>
+            <h2 class='container-heading'><span class="heading_font">Air Quality Index</span></h2>
+      <div class='description'><br></br>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			
+      <h1 class=pred>	PM2.5 {{prediction}} </h1>
+      
+      <br></br>
+  
+<table style="width:50%">
+  
+  <tr>
+    <th>PM2.5</th>
+    <th>AIR QUALITY INDEX</th>
+    <th>AQI CATEGORY</th>
+  </tr> 
+  <tr>
+    <td>0.0 – 30</td>
+    <td>0 - 50</td>
+    <td> Good </td> 
+  </tr><tr>
+    <td>31 - 60</td>
+    <td>50 - 100</td>
+    <td> Satisfactory </td> 
+  </tr><tr>
+    <td>61 – 100</td>
+    <td>101 - 160</td>
+    <td> Moderately Polluted </td> 
+  </tr> 
+  <tr>
+    <td>101 – 170.4</td>
+    <td>161-210</td>
+    <td> Unhealthy </td>
+  </tr>
+  <tr>
+    <td>170.5 – 220.4</td>
+    <td>210-300</td>
+    <td> Very Unhealthy </td> 
+  </tr>
+   <tr>
+    <td>Above 220.5</td>
+    <td>Above300</td>
+    <td> Hazardous </td> 
+  </tr>
+      </table>
+ <br></br> <br></br> 
+      <p class=credits> Designed and developed by suhas sasetty</p>
+      <br></br><br></br><br></br><br></br><br></br> <br></br> <br></br><br></br>
+  </div>
+     <!-- Footer -->
+        
+       <div class='footer'>
+           <div class="contact">
+               
+               <a target="_blank" href="https://www.linkedin.com/in/suhas-sasetty/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Suhas Sasetty<br>Mail : aiml.suhas@gmail.com</p>
+       </div>
+
+    </body>
+</html>

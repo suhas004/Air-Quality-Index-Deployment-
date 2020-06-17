@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Diabetes Predictor</title>
+        
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+      
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Air Quality Index Predictor</span></h2>
+            <div class='description'>
+              <br> </br>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST"> <p class="descript"> A Regression problem solved by using XGBoost Algorithm</p> <br>
+                <input class="form-input" type="text" name="Average_temp" placeholder="Average Temperature (°c) eg. 30 "><br>
+                <input class="form-input" type="text" name="Max_temp" placeholder="Maximum Temperature (°c) eg. 35"><br>
+                <input class="form-input" type="text" name="Min_temp" placeholder="Minimum Temperature (°c) eg. 27"><br>
+                <input class="form-input" type="text" name="Atmospheric_pressure" placeholder="	Atmospheric pressure at sea level (hPa) eg. 1000"><br>
+                <input class="form-input" type="text" name="Average_humidity" placeholder="Average relative humidity (%) eg. 50"><br>
+                <input class="form-input" type="text" name="Average_visibility" placeholder="Average visibility (Km)eg. 3.0"><br>
+                <input class="form-input" type="text" name="Average_windspeed" placeholder="Average wind speed (Km/h) eg. 12.0"><br>
+                <input class="form-input" type="text" name="Max sustained wind speed" placeholder="Maximum sustained wind speed (Km/h) eg. 15.0"><br>
+
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               
+               <a target="_blank" href="https://www.linkedin.com/in/suhas-sasetty/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Suhas Sasetty<br>Mail : aiml.suhas@gmail.com</p>
+       </div>
+
+    </body>
+</html>
