@@ -12,3 +12,7 @@ https://airqualityindex-predictor.herokuapp.com/
 
 
 ![alt text](https://github.com/suhas004/Air-Quality-Index-Deployment-/blob/master/output.png)
+
+Collaborators
+- K.Vamshi Reddy
+- Suhas Sasetty
